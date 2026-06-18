@@ -1,5 +1,5 @@
 /* ============================================
-   AHMED HAMOUDA — INTERACTIONS
+   AHMED HAMOUDA — PREMIUM RESUME v2.0
    Pure Vanilla JS · Performance-First
    ============================================ */
 
@@ -69,7 +69,7 @@
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
 
-  /* ---------- Smooth Scroll (header offset) ---------- */
+  /* ---------- Smooth Scroll ---------- */
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', (e) => {
       const targetId = anchor.getAttribute('href');
@@ -105,9 +105,8 @@
   const typingEl = document.getElementById('typingText');
   const roles = [
     'Senior Collections Specialist',
-    'Customer Operations Professional',
-    'Founder of Axentro',
-    'AI-Assisted Business Systems Developer'
+    'AI-Assisted Business Systems Developer',
+    'Founder of Axentro'
   ];
   let roleIndex = 0, charIndex = 0, isDeleting = false;
 
@@ -128,10 +127,10 @@
       charIndex++;
       if (charIndex === current.length) {
         isDeleting = true;
-        setTimeout(type, 2200);
+        setTimeout(type, 2400);
         return;
       }
-      setTimeout(type, 55);
+      setTimeout(type, 60);
     }
   };
   setTimeout(type, 1200);
@@ -150,7 +149,6 @@
   reveals.forEach(el => revealObserver.observe(el));
 
   function revealOnLoad() {
-    // Trigger initial reveals for above-the-fold content
     document.querySelectorAll('.hero .reveal').forEach((el, i) => {
       setTimeout(() => el.classList.add('visible'), i * 120);
     });
@@ -230,7 +228,6 @@
         await navigator.clipboard.writeText(value);
         showToast('Copied to clipboard');
       } catch {
-        // Fallback
         const ta = document.createElement('textarea');
         ta.value = value;
         document.body.appendChild(ta);
@@ -259,20 +256,6 @@
       orb.style.transform = `translate(${x}px, ${y}px)`;
     });
   }
-
-  /* ---------- Parallax Sections ---------- */
-  const parallaxTargets = document.querySelectorAll('.blob');
-  let scrollY = 0;
-  window.addEventListener('scroll', () => { scrollY = window.scrollY; }, { passive: true });
-
-  function parallaxLoop() {
-    parallaxTargets.forEach((el, i) => {
-      const speed = (i + 1) * 0.05;
-      el.style.transform += '';
-    });
-    requestAnimationFrame(parallaxLoop);
-  }
-  // Light parallax on blobs via CSS animation already; keep performant.
 
   /* ---------- Active Nav Highlight ---------- */
   const sections = document.querySelectorAll('main section[id]');
@@ -305,11 +288,48 @@
     });
   });
 
+  /* ---------- Achievement Card 3D Tilt ---------- */
+  const achievements = document.querySelectorAll('.achievement');
+  achievements.forEach(card => {
+    card.addEventListener('mousemove', (e) => {
+      const rect = card.getBoundingClientRect();
+      const x = (e.clientX - rect.left) / rect.width - 0.5;
+      const y = (e.clientY - rect.top) / rect.height - 0.5;
+      card.style.transform = `translateY(-6px) rotateX(${-y * 3}deg) rotateY(${x * 3}deg)`;
+    });
+    card.addEventListener('mouseleave', () => {
+      card.style.transform = '';
+    });
+  });
+
+  /* ---------- GitHub Card 3D Tilt ---------- */
+  const githubCards = document.querySelectorAll('.github__card');
+  githubCards.forEach(card => {
+    card.addEventListener('mousemove', (e) => {
+      const rect = card.getBoundingClientRect();
+      const x = (e.clientX - rect.left) / rect.width - 0.5;
+      const y = (e.clientY - rect.top) / rect.height - 0.5;
+      card.style.transform = `translateY(-6px) rotateX(${-y * 3}deg) rotateY(${x * 3}deg)`;
+    });
+    card.addEventListener('mouseleave', () => {
+      card.style.transform = '';
+    });
+  });
+
+  /* ---------- Download CV Button Feedback ---------- */
+  const downloadBtn = document.getElementById('downloadCvBtn');
+  if (downloadBtn) {
+    downloadBtn.addEventListener('click', () => {
+      showToast('Downloading CV...');
+    });
+  }
+
   /* ---------- Keyboard Accessibility ---------- */
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape' && nav.classList.contains('open')) {
       nav.classList.remove('open');
       menuToggle.classList.remove('active');
+      menuToggle.setAttribute('aria-expanded', 'false');
     }
   });
 
