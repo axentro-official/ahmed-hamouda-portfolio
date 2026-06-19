@@ -46,22 +46,45 @@
   };
   window.addEventListener('scroll', onScroll, { passive: true });
 
-  /* ---------- Mobile Menu ---------- */
+  /* ---------- Mobile Menu (Dropdown Bar) ---------- */
   const menuToggle = document.getElementById('menuToggle');
+  const navDropdown = document.getElementById('navDropdown');
   const nav = document.getElementById('nav');
+  let isMenuOpen = false;
+
+  function openMenu() {
+    isMenuOpen = true;
+    navDropdown.classList.add('open');
+    menuToggle.classList.add('active');
+    menuToggle.setAttribute('aria-expanded', 'true');
+    const navHeight = nav.offsetHeight;
+    navDropdown.style.height = (navHeight + 60) + 'px';
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeMenu() {
+    isMenuOpen = false;
+    navDropdown.style.height = '0';
+    menuToggle.classList.remove('active');
+    menuToggle.setAttribute('aria-expanded', 'false');
+    setTimeout(() => {
+      if (!isMenuOpen) {
+        navDropdown.classList.remove('open');
+        document.body.style.overflow = '';
+      }
+    }, 400);
+  }
 
   menuToggle.addEventListener('click', () => {
-    const open = nav.classList.toggle('open');
-    menuToggle.classList.toggle('active', open);
-    menuToggle.setAttribute('aria-expanded', open);
+    if (isMenuOpen) { closeMenu(); } else { openMenu(); }
   });
 
   nav.querySelectorAll('a').forEach(link => {
-    link.addEventListener('click', () => {
-      nav.classList.remove('open');
-      menuToggle.classList.remove('active');
-      menuToggle.setAttribute('aria-expanded', 'false');
-    });
+    link.addEventListener('click', () => { closeMenu(); });
+  });
+
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 768 && isMenuOpen) { closeMenu(); }
   });
 
   /* ---------- Back To Top ---------- */
@@ -299,10 +322,8 @@
 
   /* ---------- Keyboard Accessibility ---------- */
   document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && nav.classList.contains('open')) {
-      nav.classList.remove('open');
-      menuToggle.classList.remove('active');
-      menuToggle.setAttribute('aria-expanded', 'false');
+    if (e.key === 'Escape' && isMenuOpen) {
+      closeMenu();
     }
   });
 
