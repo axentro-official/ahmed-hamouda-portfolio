@@ -1,5 +1,5 @@
 /* ============================================
-   AHMED HAMOUDA — PREMIUM RESUME v2.0
+   AHMED HAMOUDA — PREMIUM RESUME v3.0
    Pure Vanilla JS · Performance-First
    ============================================ */
 
@@ -104,7 +104,8 @@
   /* ---------- Typing Effect ---------- */
   const typingEl = document.getElementById('typingText');
   const roles = [
-    'Senior Collections Specialist',
+    'Customer Operations Professional',
+    'Accounts Receivable Specialist',
     'AI-Assisted Business Systems Developer',
     'Founder of Axentro'
   ];
@@ -185,19 +186,19 @@
     requestAnimationFrame(tick);
   }
 
-  /* ---------- Skill Bars ---------- */
-  const skillFills = document.querySelectorAll('.skill__fill');
-  const skillObserver = new IntersectionObserver((entries) => {
+  /* ---------- Skill & Language Bars ---------- */
+  const fillBars = document.querySelectorAll('.skill__fill, .lang__fill');
+  const fillObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         const fill = entry.target;
         const level = fill.dataset.level;
         setTimeout(() => { fill.style.width = level + '%'; }, 80);
-        skillObserver.unobserve(fill);
+        fillObserver.unobserve(fill);
       }
     });
   }, { threshold: 0.4 });
-  skillFills.forEach(f => skillObserver.observe(f));
+  fillBars.forEach(f => fillObserver.observe(f));
 
   /* ---------- Magnetic Buttons ---------- */
   const magnetics = document.querySelectorAll('.magnetic');
@@ -274,9 +275,9 @@
 
   sections.forEach(s => navObserver.observe(s));
 
-  /* ---------- Project Card 3D Tilt ---------- */
-  const projects = document.querySelectorAll('.project');
-  projects.forEach(card => {
+  /* ---------- Project/GitHub Card 3D Tilt ---------- */
+  const tiltCards = document.querySelectorAll('.project, .github__card');
+  tiltCards.forEach(card => {
     card.addEventListener('mousemove', (e) => {
       const rect = card.getBoundingClientRect();
       const x = (e.clientX - rect.left) / rect.width - 0.5;
@@ -288,39 +289,11 @@
     });
   });
 
-  /* ---------- Achievement Card 3D Tilt ---------- */
-  const achievements = document.querySelectorAll('.achievement');
-  achievements.forEach(card => {
-    card.addEventListener('mousemove', (e) => {
-      const rect = card.getBoundingClientRect();
-      const x = (e.clientX - rect.left) / rect.width - 0.5;
-      const y = (e.clientY - rect.top) / rect.height - 0.5;
-      card.style.transform = `translateY(-6px) rotateX(${-y * 3}deg) rotateY(${x * 3}deg)`;
-    });
-    card.addEventListener('mouseleave', () => {
-      card.style.transform = '';
-    });
-  });
-
-  /* ---------- GitHub Card 3D Tilt ---------- */
-  const githubCards = document.querySelectorAll('.github__card');
-  githubCards.forEach(card => {
-    card.addEventListener('mousemove', (e) => {
-      const rect = card.getBoundingClientRect();
-      const x = (e.clientX - rect.left) / rect.width - 0.5;
-      const y = (e.clientY - rect.top) / rect.height - 0.5;
-      card.style.transform = `translateY(-6px) rotateX(${-y * 3}deg) rotateY(${x * 3}deg)`;
-    });
-    card.addEventListener('mouseleave', () => {
-      card.style.transform = '';
-    });
-  });
-
   /* ---------- Download CV Button Feedback ---------- */
   const downloadBtn = document.getElementById('downloadCvBtn');
   if (downloadBtn) {
     downloadBtn.addEventListener('click', () => {
-      showToast('Downloading CV...');
+      showToast('Preparing CV download...');
     });
   }
 
