@@ -1,0 +1,194 @@
+/* Responsive overrides for Ahmed Hamouda Portfolio */
+
+@media (max-width: 1100px) {
+    .container { padding-inline: 2rem; }
+    .section { padding: clamp(2.5rem, 5vw, 4rem) 0; }
+    .hero-title { font-size: clamp(2rem, 5vw, 3.5rem); }
+    .axentro-workflow .step { flex: 1 1 30%; }
+}
+
+@media (max-width: 900px) {
+    /* Header & Mobile Nav */
+    .menu-toggle { display: inline-flex; }
+    .header-actions .btn-primary.btn-sm { display: none; }
+    
+    .main-nav {
+        position: fixed;
+        top: 72px; /* Match header min-height */
+        inset-inline-end: 0;
+        width: min(85vw, 320px);
+        height: calc(100vh - 72px);
+        background: var(--surface);
+        border-inline-start: 1px solid var(--border);
+        z-index: 999;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        transition: transform var(--transition-base), visibility 0s linear var(--transition-base), opacity var(--transition-base);
+        overflow-y: auto;
+        box-shadow: var(--shadow-lg);
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+    }
+    
+    [dir="ltr"] .main-nav { transform: translateX(100%); }
+    [dir="rtl"] .main-nav { transform: translateX(-100%); }
+    
+    .main-nav.active {
+        transform: translateX(0);
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+        transition: transform var(--transition-base), visibility 0s linear 0s, opacity var(--transition-base);
+    }
+    
+    .main-nav ul { flex-direction: column; width: 100%; gap: 0.5rem; }
+    .main-nav li { width: 100%; }
+    .main-nav a { 
+        display: block; 
+        padding: 1rem; 
+        border-radius: var(--radius-sm); 
+        font-size: 1.1rem; 
+    }
+    .main-nav a:hover, .main-nav a:focus { background: var(--surface-2); }
+
+    /* Hero Adjustments */
+    .hero-inner { gap: 2rem; }
+    .profile-image-frame { max-width: 320px; }
+    
+    /* Section Spacing */
+    .section { padding: 3rem 0; }
+}
+
+@media (max-width: 768px) {
+    .container { padding-inline: 1.5rem; }
+    .section-title { font-size: 1.8rem; }
+    .subsection-title { font-size: 1.3rem; }
+    
+    /* Axentro Workflow */
+    .axentro-workflow .step { flex: 1 1 100%; }
+    
+    /* Contact Form */
+    .contact-form { padding: 1.5rem; }
+    
+    /* Long text safety */
+    .contact-info a, .timeline-content p, .details-content p, .form-status {
+        overflow-wrap: anywhere;
+    }
+}
+
+@media (max-width: 600px) {
+    /* Typography & Layout */
+    .container { padding-inline: 1rem; }
+    h1 { font-size: 2rem; }
+    h2 { font-size: 1.5rem; }
+    .hero-title { font-size: 2.2rem; }
+    .hero-pretitle { font-size: 1rem; }
+    .hero-desc { font-size: 1rem; }
+    
+    /* Profile Path */
+    .profile-path { flex-direction: column; gap: 0.5rem; }
+    .profile-path .path-arrow { transform: rotate(90deg); }
+    [dir="rtl"] .profile-path .path-arrow { transform: rotate(90deg); }
+    
+    /* Workflow Grid - Keep 2 columns until 480px */
+    .workflow-grid { grid-template-columns: repeat(2, 1fr); }
+    
+    /* Hero CTAs & Social */
+    .hero-ctas { flex-direction: column; width: 100%; }
+    .hero-ctas .btn { width: 100%; }
+    .hero-social { width: 100%; margin-top: 1rem; }
+    .social-link { width: 100%; justify-content: center; }
+    
+    /* Contact Info */
+    .contact-info p { flex-direction: column; align-items: flex-start; gap: 0.2rem; }
+    .contact-info strong { min-width: 0; }
+    
+    /* Footer */
+    .footer-inner { flex-direction: column; text-align: center; gap: 1.5rem; }
+    .footer-controls { width: 100%; justify-content: center; }
+    
+    /* Modal */
+    .modal-content { padding: 1rem; width: 95vw; max-height: 85vh; }
+    .modal-close { top: 0.5rem; inset-inline-end: 0.5rem; width: 32px; height: 32px; }
+    .modal-image { max-height: 70vh; width: auto; max-width: 100%; margin: 0 auto; }
+}
+
+@media (max-width: 480px) {
+    /* Timeline Alignment */
+    .timeline {
+        padding-inline-start: 1.5rem; /* 24px */
+    }
+    .timeline::before {
+        inset-inline-start: 0; /* Line starts at 0 */
+        width: 2px; /* Ensure 2px line */
+    }
+    .timeline-item::before {
+        /* Layout width is 14px (from main.css, border-box). Center is 7px. */
+        /* Left edge needs to be at 1px to center on 2px line (0 to 2px). */
+        /* 24px - 1.875rem(-30px) = -6px. -6px + 7px = 1px. Perfect alignment. */
+        inset-inline-start: -1.875rem;
+        top: 1.2rem;
+    }
+    .timeline-item { margin-bottom: 1.5rem; }
+    
+    /* Badges */
+    .badge-concept { font-size: 0.7rem; padding: 0.2rem 0.6rem; top: 0.5rem; inset-inline-end: 0.5rem; }
+    
+    /* Grids */
+    .grid-3 { grid-template-columns: 1fr; }
+    .grid-2 { grid-template-columns: 1fr; }
+    .workflow-grid { grid-template-columns: 1fr; }
+    
+    /* Certificate Actions */
+    .cert-actions { flex-direction: column; }
+    .cert-actions .btn { width: 100%; }
+    
+    /* Contact Form Padding */
+    .contact-form { padding: 1rem; }
+}
+
+@media (max-width: 360px) {
+    .hero-title { font-size: 1.8rem; }
+    .hero-subtitle {
+        font-size: 1.1rem;
+        overflow-wrap: anywhere; /* Safe wrapping for long English/Arabic text */
+    }
+    .profile-image-frame { max-width: 220px; } /* Reduced from 250px for 320px safety */
+    .profile-image-frame::before {
+        inset-inline-start: -10px; /* Reduced from -15px to prevent overflow */
+        top: -10px;
+    }
+    .btn { padding: 0.7rem 1rem; font-size: 0.9rem; }
+    .header-actions { gap: 0.25rem; }
+    .btn-icon { min-width: 36px; min-height: 36px; padding: 0.4rem; }
+    .logo { font-size: 1.2rem; padding: 0.2rem 0.4rem; }
+    .footer-controls { flex-direction: row; gap: 0.5rem; }
+}
+
+/* Touch Device Optimization */
+@media (hover: none) {
+    .showcase-card:hover,
+    .track-card:hover,
+    .cap-card:hover,
+    .timeline-content:hover,
+    .feature-list li:hover {
+        transform: none;
+        box-shadow: var(--shadow-sm);
+    }
+    .main-nav a:hover {
+        background: transparent;
+    }
+}
+
+/* Landscape Mobile Handling */
+@media (max-height: 600px) and (orientation: landscape) {
+    .hero { padding: 2rem 0; }
+    .hero-inner { align-items: center; gap: 1rem; }
+    .profile-image-frame { max-width: 200px; }
+    .main-nav { padding-top: 1rem; }
+    .modal-content { max-height: 90vh; overflow-y: auto; }
+    .modal-image { max-height: 60vh; }
+}
