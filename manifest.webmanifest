@@ -2,18 +2,22 @@
   "name": "Ahmed Hamouda Portfolio",
   "short_name": "Ahmed Hamouda",
   "description": "Senior Collection Specialist & AI-Assisted Digital Solutions Builder",
+  "id": "/",
   "start_url": "/",
+  "scope": "/",
+  "lang": "ar",
+  "dir": "rtl",
   "display": "standalone",
   "background_color": "#07111F",
   "theme_color": "#173A5E",
   "icons": [
     {
-      "src": "assets/images/icons/favicon.svg",
+      "src": "/assets/images/icons/favicon.svg",
       "sizes": "any",
       "type": "image/svg+xml"
     },
     {
-      "src": "assets/images/icons/apple-touch-icon.png",
+      "src": "/assets/images/icons/apple-touch-icon.png",
       "sizes": "180x180",
       "type": "image/png"
     }
