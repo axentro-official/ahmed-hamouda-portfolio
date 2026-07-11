@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn more about Ahmed Hamouda's professional profile, his dual experience in business operations and AI-assisted digital execution, and his structured AI workflow.">
+    <title>About Ahmed Hamouda | Professional Profile & AI Workflow</title>
+    
+    <link rel="canonical" href="https://ahmed-hamouda-portfolio.pages.dev/about.html">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="About Ahmed Hamouda | Professional Profile">
+    <meta property="og:description" content="Learn more about Ahmed Hamouda's professional profile, his dual experience in business operations and AI-assisted digital execution, and his structured AI workflow.">
+    <meta property="og:image" content="https://ahmed-hamouda-portfolio.pages.dev/assets/images/og/og-image.webp">
+    <meta property="og:url" content="https://ahmed-hamouda-portfolio.pages.dev/about.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="About Ahmed Hamouda | Professional Profile">
+    <meta name="twitter:description" content="Learn more about Ahmed Hamouda's professional profile, his dual experience in business operations and AI-assisted digital execution, and his structured AI workflow.">
+    <meta name="twitter:image" content="https://ahmed-hamouda-portfolio.pages.dev/assets/images/og/og-image.webp">
+    <meta name="theme-color" content="#173A5E">
+    
+    <link rel="icon" href="assets/images/icons/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="assets/images/icons/apple-touch-icon.png">
+    <link rel="manifest" href="manifest.webmanifest">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/print.css" media="print">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Person",
+          "name": "Ahmed Hamouda",
+          "jobTitle": "Senior Collection Specialist | AI-Assisted Digital Solutions Builder",
+          "email": "mailto:ah.hamouda139@gmail.com",
+          "telephone": "+201120143013",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Cairo",
+            "addressCountry": "EG"
+          },
+          "url": "https://ahmed-hamouda-portfolio.pages.dev",
+          "sameAs": [
+            "https://www.linkedin.com/in/ahmed-hamouda-6505051a5/",
+            "https://axentro.site/"
+          ]
+        },
+        {
+          "@type": "WebPage",
+          "name": "About Ahmed Hamouda",
+          "url": "https://ahmed-hamouda-portfolio.pages.dev/about.html",
+          "description": "Learn more about Ahmed Hamouda's professional profile, his dual experience in business operations and AI-assisted digital execution, and his structured AI workflow."
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://ahmed-hamouda-portfolio.pages.dev/index.html"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "About",
+              "item": "https://ahmed-hamouda-portfolio.pages.dev/about.html"
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+</head>
+<body>
+    <a href="#main-content" class="skip-link" data-i18n="skip_link">Skip to main content</a>
+    
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="index.html" class="logo" aria-label="Ahmed Hamouda Home">AH</a>
+            
+            <nav class="main-nav" id="primary-nav" aria-label="Main navigation">
+                <ul>
+                    <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+                    <li><a href="about.html" class="active" data-i18n="nav_about" aria-current="page">About</a></li>
+                    <li><a href="career.html" data-i18n="nav_career">Career</a></li>
+                    <li><a href="axentro.html" data-i18n="nav_axentro">Axentro</a></li>
+                    <li><a href="showcases.html" data-i18n="nav_showcases">Showcases</a></li>
+                    <li><a href="certifications.html" data-i18n="nav_certs">Certifications</a></li>
+                    <li><a href="contact.html" data-i18n="nav_contact">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <div class="header-actions">
+                <button type="button" class="btn-icon lang-switch" aria-label="Switch Language">
+                    <span class="lang-current">EN</span>
+                </button>
+                <button type="button" class="btn-icon theme-switch" aria-label="Switch Theme">
+                    <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+                    <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                </button>
+                <a href="assets/cv/Ahmed-Hamouda-CV.pdf" download class="btn btn-primary btn-sm" data-i18n="download_cv">Download CV</a>
+                <button type="button" class="btn-icon menu-toggle" id="menu-toggle" aria-label="Open Menu" aria-expanded="false" aria-controls="primary-nav">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <nav aria-label="Breadcrumb" class="breadcrumb-nav">
+            <div class="container">
+                <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+                    <li class="breadcrumb-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                        <a href="index.html" itemprop="item" data-i18n="nav_home"><span itemprop="name">Home</span></a>
+                        <meta itemprop="position" content="1" />
+                    </li>
+                    <li class="breadcrumb-separator" aria-hidden="true">→</li>
+                    <li class="breadcrumb-item active" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                        <a href="about.html" itemprop="item" aria-current="page" data-i18n="nav_about"><span itemprop="name">About</span></a>
+                        <meta itemprop="position" content="2" />
+                    </li>
+                </ol>
+            </div>
+        </nav>
+
+        <section class="section page-hero">
+            <div class="container">
+                <h1 data-i18n="about_h1">About Ahmed Hamouda</h1>
+                <p class="section-desc" data-i18n="about_hero_desc">Bridging strong real-world business experience with modern digital execution through AI-assisted workflows. Explore my professional profile, dual-track expertise, and structured approach to building digital solutions.</p>
+            </div>
+        </section>
+
+        <section id="profile" class="section">
+            <div class="container">
+                <h2 class="section-title" data-i18n="profile_title">Professional Profile</h2>
+                <p class="section-desc" data-i18n="profile_desc">My career progression reflects a steady growth in responsibility, from retail operations to financial collections, and now into AI-assisted digital execution.</p>
+                <div class="profile-path">
+                    <div class="path-step"><span data-i18n="path_1">Retail & Customer Experience</span></div>
+                    <div class="path-arrow" aria-hidden="true">→</div>
+                    <div class="path-step"><span data-i18n="path_2">Store Operations</span></div>
+                    <div class="path-arrow" aria-hidden="true">→</div>
+                    <div class="path-step"><span data-i18n="path_3">Administration</span></div>
+                    <div class="path-arrow" aria-hidden="true">→</div>
+                    <div class="path-step"><span data-i18n="path_4">Collection Specialist</span></div>
+                    <div class="path-arrow" aria-hidden="true">→</div>
+                    <div class="path-step"><span data-i18n="path_5">Senior Collection Specialist</span></div>
+                    <div class="path-arrow" aria-hidden="true">→</div>
+                    <div class="path-step highlight"><span data-i18n="path_6">AI-Assisted Digital Solution Building</span></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section bg-surface">
+            <div class="container">
+                <h2 class="section-title" data-i18n="sides_title">Two Sides of My Experience</h2>
+                <div class="grid-2">
+                    <div class="track-card">
+                        <h3 data-i18n="track_a_title">Track A: Business & Operations</h3>
+                        <ul class="feature-list">
+                            <li data-i18n="track_a_1">Accounts Receivable & Collections</li>
+                            <li data-i18n="track_a_2">E-Invoicing & Financial Reporting</li>
+                            <li data-i18n="track_a_3">Administrative & Sales Operations</li>
+                            <li data-i18n="track_a_4">Team Coordination & Customer Relations</li>
+                        </ul>
+                    </div>
+                    <div class="track-card">
+                        <h3 data-i18n="track_b_title">Track B: AI-Assisted Digital Execution</h3>
+                        <ul class="feature-list">
+                            <li data-i18n="track_b_1">Business Requirement Definition</li>
+                            <li data-i18n="track_b_2">AI-Assisted Implementation Workflows</li>
+                            <li data-i18n="track_b_3">Functional Testing & UX Review</li>
+                            <li data-i18n="track_b_4">Iterative Refinement & Deployment</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title" data-i18n="workflow_title">How I Build With AI</h2>
+                <div class="workflow-grid">
+                    <div class="workflow-item"><span class="num">1</span><h3 data-i18n="wf_1">Understand the Business Need</h3></div>
+                    <div class="workflow-item"><span class="num">2</span><h3 data-i18n="wf_2">Define Requirements</h3></div>
+                    <div class="workflow-item"><span class="num">3</span><h3 data-i18n="wf_3">Structure the Solution</h3></div>
+                    <div class="workflow-item"><span class="num">4</span><h3 data-i18n="wf_4">Guide AI-Assisted Implementation</h3></div>
+                    <div class="workflow-item"><span class="num">5</span><h3 data-i18n="wf_5">Review and Test</h3></div>
+                    <div class="workflow-item"><span class="num">6</span><h3 data-i18n="wf_6">Troubleshoot</h3></div>
+                    <div class="workflow-item"><span class="num">7</span><h3 data-i18n="wf_7">Refine</h3></div>
+                    <div class="workflow-item"><span class="num">8</span><h3 data-i18n="wf_8">Deploy</h3></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>&copy; <span id="year"></span> Ahmed Hamouda. <span data-i18n="rights_reserved">All rights reserved.</span></p>
+            <div class="footer-controls">
+                <button type="button" class="btn-link lang-switch" aria-label="Switch Language">
+                    <span class="lang-current">EN</span>
+                </button>
+                <button type="button" class="btn-link theme-switch" aria-label="Switch Theme">
+                    <span data-i18n="theme_toggle">Theme</span>
+                </button>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/config.js"></script>
+    <script src="assets/js/i18n.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/contact.js"></script>
+</body>
+</html>
