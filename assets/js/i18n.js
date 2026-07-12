@@ -1,4 +1,3 @@
-```javascript
 const translations = {
     ar: {
         skip_link: "تخطي إلى المحتوى الرئيسي",
@@ -23,6 +22,8 @@ const translations = {
         learn_more: "اعرف المزيد",
         about_h1: "نبذة عن أحمد حمودة",
         about_hero_desc: "ربط خبرة الأعمال الواقعية القوية بمنهجية حديثة للتنفيذ الرقمي من خلال مسارات العمل المدعومة بالذكاء الاصطناعي. استكشف ملفي المهني، وخبرتي المزدوجة، ومنهجي المنظم في بناء الحلول الرقمية.",
+        about_preview_title: "نبذة عني",
+        about_preview_desc: "يعكس تطوري المهني نمواً ثابتاً في المسؤوليات، من عمليات البيع بالتجزئة إلى التحصيل المالي، والآن إلى التنفيذ الرقمي بمساعدة الذكاء الاصطناعي.",
         profile_title: "الملف المهني",
         profile_desc: "يعكس تطوري المهني نمواً ثابتاً في المسؤوليات، من عمليات البيع بالتجزئة إلى التحصيل المالي، والآن إلى التنفيذ الرقمي بمساعدة الذكاء الاصطناعي.",
         career_preview_title: "المسيرة المهنية",
@@ -32,6 +33,13 @@ const translations = {
         career_overview_title: "نظرة عامة على المسيرة المهنية",
         career_overview_desc: "بدأ التطور المهني في البيع بالتجزئة وعمليات المتجر، وتقدم إلى الإدارة قبل الانتقال إلى التحصيلات المالية. بعد الترقية إلى أخصائي تحصيل أول، تمتد المسيرة المهنية الآن إلى الحلول الرقمية بمساعدة الذكاء الاصطناعي.",
         view_career_journey: "عرض المسيرة المهنية",
+        growth_title: "التطور المهني",
+        growth_1: "تجربة البيع بالتجزئة",
+        growth_2: "عمليات المتجر",
+        growth_3: "الإدارة",
+        growth_4: "التحصيلات المالية",
+        growth_5: "التحصيلات الأولى",
+        growth_6: "الحلول الرقمية بمساعدة الذكاء الاصطناعي",
         path_1: "تجربة البيع وخدمة العملاء",
         path_2: "عمليات المتجر",
         path_3: "الإدارة",
@@ -113,6 +121,7 @@ const translations = {
         view_all_showcases: "عرض جميع العروض",
         concept_badge: "عرض مفاهيمي",
         show_details: "عرض التفاصيل",
+        view_details: "عرض التفاصيل",
         show_need: "حاجة العمل:",
         show_solution: "اتجاه الحل:",
         show_features: "الميزات المحتملة:",
@@ -250,6 +259,8 @@ const translations = {
         learn_more: "Learn More",
         about_h1: "About Ahmed Hamouda",
         about_hero_desc: "Bridging strong real-world business experience with modern digital execution through AI-assisted workflows. Explore my professional profile, dual-track expertise, and structured approach to building digital solutions.",
+        about_preview_title: "About Me",
+        about_preview_desc: "My career progression reflects a steady growth in responsibility, from retail operations to financial collections, and now into AI-assisted digital execution.",
         profile_title: "Professional Profile",
         profile_desc: "My career progression reflects a steady growth in responsibility, from retail operations to financial collections, and now into AI-assisted digital execution.",
         career_preview_title: "Career Journey",
@@ -259,6 +270,13 @@ const translations = {
         career_overview_title: "Career Overview",
         career_overview_desc: "The professional progression started in retail and store operations, advancing into administration before transitioning to financial collections. Following a promotion to Senior Collection Specialist, the career journey now extends into AI-assisted digital solutions.",
         view_career_journey: "View Career Journey",
+        growth_title: "Professional Growth",
+        growth_1: "Retail Experience",
+        growth_2: "Store Operations",
+        growth_3: "Administration",
+        growth_4: "Financial Collections",
+        growth_5: "Senior Collections",
+        growth_6: "AI-Assisted Digital Solutions",
         path_1: "Retail & Customer Experience",
         path_2: "Store Operations",
         path_3: "Administration",
@@ -340,6 +358,7 @@ const translations = {
         view_all_showcases: "View All Showcases",
         concept_badge: "Concept Showcase",
         show_details: "View Details",
+        view_details: "View Details",
         show_need: "Business Need:",
         show_solution: "Solution Direction:",
         show_features: "Possible Features:",
@@ -455,4 +474,3 @@ const translations = {
         error_404_home: "Go to Homepage"
     }
 };
-```
