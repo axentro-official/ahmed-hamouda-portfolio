@@ -47,10 +47,7 @@
           "telephone": "+201120143013",
           "address": { "@type": "PostalAddress", "addressLocality": "Cairo", "addressCountry": "EG" },
           "url": "https://ahmed-hamouda-portfolio.pages.dev",
-          "sameAs": [
-            "https://www.linkedin.com/in/ahmed-hamouda-6505051a5/",
-            "https://axentro.site/"
-          ]
+          "sameAs": ["https://www.linkedin.com/in/ahmed-hamouda-6505051a5/", "https://axentro.site/"]
         },
         { "@type": "WebSite", "name": "Ahmed Hamouda Portfolio", "url": "https://ahmed-hamouda-portfolio.pages.dev" },
         {
@@ -108,13 +105,13 @@
             <div class="container hero-inner">
                 <p class="eyebrow" aria-hidden="true">Portfolio — Cairo, EG</p>
 
-                <div class="hero-avatar" aria-hidden="false">
+                <div class="hero-avatar">
                     <div class="avatar-frame">
                         <img src="assets/images/profile/ahmed-hamouda.webp" alt="Portrait of Ahmed Hamouda — Senior Collection Specialist and AI-Assisted Digital Solutions Builder" width="640" height="640" fetchpriority="high" decoding="async" loading="eager">
                     </div>
-                    <span class="float-chip chip-1" aria-hidden="true"><span class="pulse-dot"></span>Available</span>
-                    <span class="float-chip chip-2" aria-hidden="true">10+ Years</span>
-                    <span class="float-chip chip-3" aria-hidden="true">7 AI Certs</span>
+                    <span class="float-chip chip-1" aria-hidden="true"><span class="pulse-dot"></span><span data-i18n="chip_available">Available</span></span>
+                    <span class="float-chip chip-2" aria-hidden="true"><span data-i18n="chip_years">10+ Years</span></span>
+                    <span class="float-chip chip-3" aria-hidden="true"><span data-i18n="chip_certs">7 AI Certs</span></span>
                 </div>
 
                 <h1 class="hero-title" id="hero-heading">Ahmed Hamouda</h1>
@@ -188,7 +185,7 @@
                     <p class="section-desc" data-i18n="axentro_desc">Axentro is my independent digital venture. It represents my structured approach to understanding business needs, defining requirements, and guiding AI-assisted implementation to create usable digital solutions.</p>
                 </header>
                 <div class="hero-ctas center">
-                    <a href="https://axentro.site/" target="_blank" rel="noopener noreferrer" class="btn btn-violet" data-i18n="visit_axentro">Visit Axentro.site</a>
+                    <a href="https://axentro.site/" target="_blank" rel="noopener noreferrer" class="btn btn-ghost" data-i18n="visit_axentro">Visit Axentro.site</a>
                 </div>
             </div>
         </section>
@@ -207,7 +204,7 @@
                         <div class="browser-frame">
                             <div class="browser-bar" aria-hidden="true">
                                 <span class="b-dot"></span><span class="b-dot"></span><span class="b-dot"></span>
-                                <span class="b-url">axentro.site</span>
+                                <span class="b-url">axentro.site/business</span>
                             </div>
                             <div class="card-image-wrap">
                                 <img src="assets/images/showcases/corporate-website.webp" alt="Corporate Website Showcase" width="400" height="250" loading="lazy" decoding="async">
@@ -364,14 +361,15 @@
 
     <footer class="site-footer" role="contentinfo">
         <div class="container footer-inner">
-            <p>&copy; <span id="year"></span> Ahmed Hamouda. <span data-i18n="rights_reserved">All rights reserved.</span></p>
+            <div class="footer-brand">
+                <p class="footer-copy">&copy; <span id="year"></span> Ahmed Hamouda. <span data-i18n="rights_reserved">All rights reserved.</span></p>
+                <a href="https://axentro.site/" target="_blank" rel="noopener noreferrer" class="footer-credit" aria-label="Axentro website">
+                    <span data-i18n="footer_made_by">Crafted by</span>&nbsp;<strong>Axentro</strong>
+                </a>
+            </div>
             <div class="footer-controls">
-                <button type="button" class="btn-link lang-switch" aria-label="Switch Language">
-                    <span class="lang-current">EN</span>
-                </button>
-                <button type="button" class="btn-link theme-switch" aria-label="Switch Theme">
-                    <span data-i18n="theme_toggle">Theme</span>
-                </button>
+                <button type="button" class="btn-link lang-switch" aria-label="Switch Language"><span class="lang-current">EN</span></button>
+                <button type="button" class="btn-link theme-switch" aria-label="Switch Theme"><span data-i18n="theme_toggle">Theme</span></button>
             </div>
         </div>
     </footer>
