@@ -1397,3 +1397,39 @@ a:hover { color: var(--text-invert); }
 .terminal-bar:hover .t-dot:nth-child(3)::after {
     content: '';
 }
+
+/* ============================================================
+   HEADER CV — compact "CV ⬇" pill on smaller screens
+   ============================================================ */
+@media (max-width: 1024px) {
+    .header-cv {
+        display: inline-flex;      /* overrides the old display:none */
+        gap: 0.3rem;
+        padding: 0 0.9rem;
+        min-height: 40px;
+        align-items: center;
+        font-size: 0;              /* hides the long translated label visually */
+    }
+    /* Universal "CV" label — recognized in both languages */
+    .header-cv::before {
+        content: 'CV';
+        font-size: 0.8125rem;
+        font-weight: 600;
+        letter-spacing: 0.03em;
+        line-height: 1;
+    }
+    /* Small download arrow beside it */
+    .header-cv::after {
+        content: '';
+        width: 13px;
+        height: 13px;
+        flex-shrink: 0;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23d1e4fa' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 3v12'/%3E%3Cpath d='m7 10 5 5 5-5'/%3E%3Cpath d='M5 21h14'/%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+    [data-theme="light"] .header-cv::after {
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2322334f' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 3v12'/%3E%3Cpath d='m7 10 5 5 5-5'/%3E%3Cpath d='M5 21h14'/%3E%3C/svg%3E");
+    }
+}
