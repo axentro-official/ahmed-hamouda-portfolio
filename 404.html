@@ -1,35 +1,34 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl" data-theme="light">
+<html lang="ar" dir="rtl" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="The requested page could not be found on Ahmed Hamouda Portfolio. Return to the homepage to continue browsing.">
     <meta name="robots" content="noindex, follow">
-    <meta name="theme-color" content="#173A5E">
+    <meta name="theme-color" content="#05060f">
     <title>404 - Page Not Found | Ahmed Hamouda</title>
     <link rel="canonical" href="https://ahmed-hamouda-portfolio.pages.dev/404.html">
-    
+
     <link rel="icon" href="assets/images/icons/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="assets/images/icons/apple-touch-icon.png">
     <link rel="manifest" href="manifest.webmanifest">
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
     <link rel="stylesheet" href="assets/css/print.css" media="print">
 </head>
 <body>
     <a href="#main-content" class="skip-link" data-i18n="skip_link">Skip to main content</a>
-    
-    <header class="site-header">
+
+    <header class="site-header" role="banner">
         <div class="container header-inner">
-            <a href="index.html" class="logo" aria-label="Ahmed Hamouda Home"><span aria-hidden="true">AH</span></a>
-            
+            <a href="index.html" class="logo" aria-label="Ahmed Hamouda — Home"><span aria-hidden="true">AH</span></a>
             <nav class="main-nav" id="primary-nav" aria-label="Main navigation">
-                <ul>
+                <ul role="list">
                     <li><a href="index.html" data-i18n="nav_home">Home</a></li>
                     <li><a href="about.html" data-i18n="nav_about">About</a></li>
                     <li><a href="career.html" data-i18n="nav_career">Career</a></li>
@@ -39,16 +38,13 @@
                     <li><a href="contact.html" data-i18n="nav_contact">Contact</a></li>
                 </ul>
             </nav>
-            
             <div class="header-actions">
-                <button type="button" class="btn-icon lang-switch" aria-label="Switch Language">
-                    <span class="lang-current">EN</span>
-                </button>
+                <button type="button" class="btn-icon lang-switch" aria-label="Switch Language"><span class="lang-current">EN</span></button>
                 <button type="button" class="btn-icon theme-switch" aria-label="Switch Theme">
                     <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
                     <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
                 </button>
-                <a href="assets/cv/Ahmed-Hamouda-CV.pdf" download class="btn btn-primary btn-sm" data-i18n="download_cv">Download CV</a>
+                <a href="assets/cv/Ahmed-Hamouda-CV.pdf" download class="btn btn-ghost btn-sm header-cv" data-i18n="download_cv">Download CV</a>
                 <button type="button" class="btn-icon menu-toggle" id="menu-toggle" aria-label="Open Menu" aria-expanded="false" aria-controls="primary-nav">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
                 </button>
@@ -57,28 +53,29 @@
     </header>
 
     <main id="main-content" role="main">
-        <section class="section page-hero">
+        <section class="section error-hero">
             <div class="container">
-                <h1 data-i18n="error_404_title">404 - Page Not Found</h1>
+                <h1 class="error-404-title">404</h1>
+                <p class="section-desc" data-i18n="error_404_msg">Sorry, the page you are looking for could not be found.</p>
                 <p class="section-desc" data-i18n="error_404_desc">The page you are looking for might have been removed or is temporarily unavailable.</p>
-                <p class="error-message" data-i18n="error_404_msg">Sorry, the page you are looking for could not be found.</p>
-                <div class="hero-ctas">
-                    <a href="index.html" class="btn btn-primary" data-i18n="error_404_home">Go to Homepage</a>
+                <div class="hero-ctas center">
+                    <a href="index.html" class="btn btn-violet" data-i18n="error_404_home">Go to Homepage</a>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer class="site-footer">
+    <footer class="site-footer" role="contentinfo">
         <div class="container footer-inner">
-            <p>&copy; <span id="year"></span> Ahmed Hamouda. <span data-i18n="rights_reserved">All rights reserved.</span></p>
+            <div class="footer-brand">
+                <p class="footer-copy">&copy; <span id="year"></span> Ahmed Hamouda. <span data-i18n="rights_reserved">All rights reserved.</span></p>
+                <a href="https://axentro.site/" target="_blank" rel="noopener noreferrer" class="footer-credit" aria-label="Axentro website">
+                    <span data-i18n="footer_made_by">Crafted by</span>&nbsp;<strong>Axentro</strong>
+                </a>
+            </div>
             <div class="footer-controls">
-                <button type="button" class="btn-link lang-switch" aria-label="Switch Language">
-                    <span class="lang-current">EN</span>
-                </button>
-                <button type="button" class="btn-link theme-switch" aria-label="Switch Theme">
-                    <span data-i18n="theme_toggle">Theme</span>
-                </button>
+                <button type="button" class="btn-link lang-switch" aria-label="Switch Language"><span class="lang-current">EN</span></button>
+                <button type="button" class="btn-link theme-switch" aria-label="Switch Theme"><span data-i18n="theme_toggle">Theme</span></button>
             </div>
         </div>
     </footer>
