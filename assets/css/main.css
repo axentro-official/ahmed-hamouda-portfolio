@@ -1353,3 +1353,24 @@ a:hover { color: var(--text-invert); }
     color: transparent;
     margin-bottom: 1.5rem;
 }
+
+/* ============================================================
+   TERMINAL v2 — modern prompt chevron (replaces "$")
+   Pure CSS — no HTML changes needed
+   ============================================================ */
+
+/* Terminal always reads left-to-right — like real terminals */
+.terminal { direction: ltr; text-align: left; }
+
+/* Replace "$" with the modern ❯ chevron (zsh / starship style) */
+.t-prompt {
+    font-size: 0;              /* hides the "$" text itself */
+    margin-inline-end: 0.7rem;
+}
+.t-prompt::before {
+    content: '\276F';          /* ❯ */
+    font-size: 0.8125rem;
+    font-weight: 500;
+    color: var(--accent-soft);
+    text-shadow: 0 0 10px rgba(143, 107, 255, 0.45);
+}
