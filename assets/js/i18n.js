@@ -225,10 +225,10 @@ const translations = {
         contact_title: "تواصل",
         contact_preview_desc: "الاستفسارات حول الحلول الرقمية بمساعدة الذكاء الاصطناعي، وتحليل الأعمال، والتعاون مرحب بها.",
         contact_page_btn: "صفحة التواصل",
-        email_label: "البريد الإلكتروني:",
-        phone_label: "الهاتف:",
-        axentro_label: "اكسنترو:",
-        linkedin_label: "لينكدإن:",
+        email_label: "البريد الإلكتروني",
+        phone_label: "الهاتف",
+        axentro_label: "موقع اكسنترو",
+        linkedin_label: "لينكدإن",
         hp_label: "اسم الشركة",
         form_name: "الاسم",
         form_email: "البريد الإلكتروني",
@@ -295,7 +295,13 @@ const translations = {
         faq_q_3: "كيف يمكننا التعاون؟",
         faq_a_3: "يمكن التواصل بشأن فرص التعاون، والحلول الرقمية، وتحليل الأعمال، والنقاشات المتعلقة بالذكاء الاصطناعي من خلال نموذج التواصل.",
         faq_q_4: "هل تعتمد على الذكاء الاصطناعي في عملك؟",
-        faq_a_4: "نعم، يمثل التنفيذ بمساعدة الذكاء الاصطناعي أحد المحاور الرئيسية في منهجيتي، مع التركيز على فهم احتياجات الأعمال وتوجيه التنفيذ بشكل منظم."
+        faq_a_4: "نعم، يمثل التنفيذ بمساعدة الذكاء الاصطناعي أحد المحاور الرئيسية في منهجيتي، مع التركيز على فهم احتياجات الأعمال وتوجيه التنفيذ بشكل منظم.",
+        chip_available: "متاح للعمل",
+        chip_years: "+10 سنوات خبرة",
+        chip_certs: "7 شهادات AI",
+        footer_made_by: "صُنع بواسطة",
+        whatsapp_label: "واتساب",
+        error_404_desc: "الصفحة التي تبحث عنها قد تكون نُقلت أو حُذفت أو غير متاحة مؤقتاً."
     },
     en: {
         skip_link: "Skip to main content",
@@ -523,10 +529,10 @@ const translations = {
         contact_title: "Contact",
         contact_preview_desc: "Inquiries regarding AI-assisted digital solutions, business analysis, and collaboration are welcome.",
         contact_page_btn: "Contact Page",
-        email_label: "Email:",
-        phone_label: "Phone:",
-        axentro_label: "Axentro:",
-        linkedin_label: "LinkedIn:",
+        email_label: "Email",
+        phone_label: "Phone",
+        axentro_label: "Axentro Website",
+        linkedin_label: "LinkedIn",
         hp_label: "Company Name",
         form_name: "Name",
         form_email: "Email",
@@ -593,6 +599,12 @@ const translations = {
         faq_q_3: "How can we collaborate?",
         faq_a_3: "Collaboration opportunities regarding business analysis, digital solutions, and AI-assisted workflows are welcome through the contact form.",
         faq_q_4: "Do you use AI in your work?",
-        faq_a_4: "Yes. AI-assisted implementation is a core part of my methodology, focusing on understanding business needs and guiding structured digital execution."
+        faq_a_4: "Yes. AI-assisted implementation is a core part of my methodology, focusing on understanding business needs and guiding structured digital execution.",
+        chip_available: "Available",
+        chip_years: "10+ Years",
+        chip_certs: "7 AI Certs",
+        footer_made_by: "Crafted by",
+        whatsapp_label: "WhatsApp",
+        error_404_desc: "The page you are looking for might have been removed or is temporarily unavailable."
     }
 };
